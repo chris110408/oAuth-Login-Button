@@ -8,7 +8,9 @@ export function loadSdk(d,s,id,jsSrc,cb) {
         js = d.createElement(s);
         js.id = id;
         js.src = jsSrc;
-        fjs.parentNode.insertBefore(js, fjs);
+        if(fjs){
+            fjs.parentNode.insertBefore(js, fjs);
+        }
         js.onload = cb;
 }
 

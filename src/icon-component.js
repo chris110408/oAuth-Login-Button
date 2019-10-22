@@ -25,6 +25,7 @@ const IconComponent = ({ icon, isLoading , spinner,customizePrefixCls,size,iconO
 
 IconComponent.propTypes = {
     icon: PropTypes.string.isRequired,
+    customizePrefixCls:PropTypes.string.isRequired,
     isLoading: PropTypes.bool,
     spinner: PropTypes.string,
     iconOnly: PropTypes.bool

@@ -94,9 +94,7 @@ class ButtonComponent extends React.Component {
   render() {
     const {
       customizePrefixCls,
-      shape,
       size,
-      icon,
       isLoading,
       spinner,
       providerObj,
@@ -159,11 +157,6 @@ ButtonComponent.propTypes = {
   providerObj: PropTypes.object.isRequired,
   clientId: PropTypes.string.isRequired,
   buttonText: PropTypes.string,
-  scope: PropTypes.string,
-  fetch_basic_profile: PropTypes.bool,
-  ux_mode: PropTypes.string,
-  redirect_uri: PropTypes.string,
-  cookiePolicy: PropTypes.string,
   prefixCls: PropTypes.string,
   size: PropTypes.string,
   isLoading: PropTypes.bool,
@@ -175,10 +168,6 @@ ButtonComponent.propTypes = {
 ButtonComponent.defaultProps = {
   loading: false,
   buttonText: "login",
-  scope: "profile email",
-  cookiePolicy: "single_host_origin",
-  fetch_basic_profile: true,
-  uxMode: "popup",
   customizePrefixCls: "oauth-login",
   size: "lg",
   hasIcon: false,

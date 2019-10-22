@@ -38,14 +38,20 @@
   "homepage": "https://github.com/chris110408",
   "dependencies": {
     "@types/react": "*",
-    "babel-polyfill": "6.26.0",
+    "chai": "^4.2.0",
     "classnames": "2.2.6",
+    "core-js": "^3.3.3",
+    "jest-extended": "^0.11.2",
+    "jsdom": "^15.2.0",
     "prop-types": "^15.6.0",
     "react-lifecycles-compat": "3.0.4",
+    "regenerator-runtime": "^0.13.3",
     "styled-components": "4.4.0"
   },
   "devDependencies": {
+    "babel-polyfill": "6.26.0",
     "@babel/core": "7.4.3",
+    "@babel/plugin-proposal-class-properties": "*",
     "@babel/plugin-proposal-object-rest-spread": "7.4.3",
     "@babel/plugin-transform-runtime": "7.4.3",
     "@babel/preset-env": "7.4.3",
@@ -57,6 +63,8 @@
     "babel-plugin-transform-react-constant-elements": "6.23.0",
     "babel-plugin-transform-react-inline-elements": "6.22.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.11.2",
     "eslint-config-ag": "2.0.0",
@@ -75,5 +83,11 @@
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }

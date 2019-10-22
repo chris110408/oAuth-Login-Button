@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconComponent/> exist: type has children 1`] = `
+Array [
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />,
+  <i
+    className="oauth-login-icon fa fa fa-google"
+  />,
+]
+`;

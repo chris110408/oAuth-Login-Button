@@ -33,7 +33,7 @@ const Wrapper = styled.div`
     text-align: center;
     border: 1px solid transparent;
     //color
-    background-color: ${props => props.color === "" || "#096dd9"};
+    background-color: ${props => props.color  || "#096dd9"};
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.025);
@@ -41,9 +41,9 @@ const Wrapper = styled.div`
     :hover,
     :focus {
       //color
-      color: ${props => props.color === "" || "#096dd9"};
+      color: ${props => props.color || "#096dd9"};
       background-color: #fff;
-      border-color: ${props => props.color === "" || "#096dd9"};
+      border-color: ${props => props.color  || "#096dd9"};
     }
 
     :active {

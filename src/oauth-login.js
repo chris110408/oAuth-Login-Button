@@ -27,7 +27,7 @@ class Oauthlogin extends Component {
     } = this.props
 
     const providerObj = getProviderConfig(provider, configs)
-    const color = buttonColor === "" ? providerObj.color : buttonColor
+    const color = buttonColor==="" ? providerObj.color : buttonColor
     return (
       <Wrapper color={color}>
         <ButtonComponent

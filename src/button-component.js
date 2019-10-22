@@ -6,7 +6,7 @@ import IconComponent from "./icon-component"
 import classNames from "classnames"
 import Configs from "./configs"
 const { sdkSrc, ElementIndexIdName } = Configs
-import  SdkLoader  from "./fns/sdk-loader"
+import SdkLoader from "./fns/sdk-loader"
 import handleSignin from "./fns/handleSignin"
 
 class ButtonComponent extends React.Component {
@@ -31,7 +31,6 @@ class ButtonComponent extends React.Component {
     if (ElementIndexIdName === "fsdk") {
       initPrams = Object.assign({}, params, { appId: clientId })
       SdkLoader.facebook(document, ElementIndexIdName, sdkSrc, initPrams)
-
     }
     this.enableButton()
   }
@@ -74,16 +73,14 @@ class ButtonComponent extends React.Component {
     const { ElementIndexIdName } = providerObj
     if (!disable) {
       if (ElementIndexIdName === "gsdk") {
-        handleSignin.google(window,signInCallBack)
+        handleSignin.google(window, signInCallBack)
       }
       if (ElementIndexIdName === "fsdk") {
-
-        handleSignin.facebook(window,signInCallBack)
+        handleSignin.facebook(window, signInCallBack)
       }
     }
     this.enableButton()
   }
-
 
   enableButton() {
     this.setState({

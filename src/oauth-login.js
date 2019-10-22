@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { polyfill } from "react-lifecycles-compat"
-import { getProviderConfig} from "./util"
+import { getProviderConfig } from "./util"
 import ButtonComponent from "./button-component"
 import Wrapper from "./sytle-wrapper"
 import PropTypes from "prop-types"
@@ -22,7 +22,7 @@ class Oauthlogin extends Component {
       spinner,
       textOnly,
       iconOnly,
-        buttonShape,
+      buttonShape,
       signInCallBack
     } = this.props
 
@@ -51,10 +51,10 @@ class Oauthlogin extends Component {
 Oauthlogin.propTypes = {
   provider: PropTypes.oneOf(["google", "facebook"]).isRequired,
   clientId: PropTypes.string.isRequired,
-  signInCallBack:PropTypes.func.isRequired,
+  signInCallBack: PropTypes.func.isRequired,
   buttonText: PropTypes.string,
   buttonColor: PropTypes.string,
-    buttonShape:PropTypes.string,
+  buttonShape: PropTypes.string,
   scope: PropTypes.string,
   fetch_basic_profile: PropTypes.bool,
   ux_mode: PropTypes.string,
@@ -73,7 +73,7 @@ Oauthlogin.defaultProps = {
   isLoading: false,
   buttonText: "login",
   buttonColor: "",
-    buttonShape:"",
+  buttonShape: "",
   scope: "profile email",
   cookiePolicy: "single_host_origin",
   fetch_basic_profile: true,

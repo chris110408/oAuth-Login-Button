@@ -6,26 +6,6 @@ The button is 100% work for google now. It will need to add some work on using t
 
 The size, shape , loading effect, button color, button text, could easily be changed by passing props.
 
-the API is as following
-provider: PropTypes.oneOf(["google", "facebook"]).isRequired,
-  clientId: PropTypes.string.isRequired,
-  signInCallBack: PropTypes.func.isRequired,
-  buttonText: PropTypes.string,
-  buttonColor: PropTypes.string,
-  buttonShape: PropTypes.string,
-  scope: PropTypes.string,
-  fetch_basic_profile: PropTypes.bool,
-  ux_mode: PropTypes.string,
-  redirect_uri: PropTypes.string,
-  cookiePolicy: PropTypes.string,
-  prefixCls: PropTypes.string,
-  size: PropTypes.string,
-  hasIcon: PropTypes.bool,
-  isLoading: PropTypes.bool,
-  spinner: PropTypes.string,
-  textOnly: PropTypes.bool,
-  iconOnly: PropTypes.bool
-
 The sytle-wrapper.js contains css code. 
 
 If you want to use the different styles the easiest way is using customizePrefixCls prop. Currently the customizePrefixCls default as OAuth-login. and the button class name is in the pattern of "oauth-login

@@ -76,7 +76,7 @@
     "react-hot-loader": "4.8.2",
     "react-test-renderer": "16.8.6",
     "uglifyjs-webpack-plugin": "2.1.2",
-    "webpack": "4.29.6",
+    "webpack": "5.94.0",
     "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.2.1"
   },
